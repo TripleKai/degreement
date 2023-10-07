@@ -1,0 +1,66 @@
+#main-header {
+  display: flex;
+  position: fixed;
+  z-index: 4;
+  justify-content: left;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  color: #fff;
+  background: black;
+  border-bottom: solid thin;
+  border-color: rgb(27, 27, 27);
+}
+
+#main-header button {
+  border: none;
+}
+
+#title {
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  padding: 2.75rem 2.75rem;
+  color: #84b0fc;
+  background-color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+#title:hover {
+  background-color: #84b0fc;
+  color: black;
+}
+
+#how-it-works {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0 0 0;
+  padding: 3rem 3rem;
+  background-color: black;
+  color: #fff;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+#how-it-works:hover {
+  background-color: #84b0fc;
+  color: black;
+}
+
+#contact {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0 0 0;
+  padding: 3rem 3rem;
+  background-color: black;
+  color: #fff;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+#contact:hover {
+  background-color: #84b0fc;
+  color: black;
+}

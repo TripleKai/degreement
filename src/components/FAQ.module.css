@@ -1,0 +1,40 @@
+#faqs {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  color: black !important;
+  background: #84b0fc;
+}
+
+/* #faqs h1 {
+  color: black !important;
+} */
+
+#faqs hr {
+  border-color: black;
+}
+
+#faqs-holder {
+  height: auto;
+  width: 50%;
+  text-align: left;
+  margin: 0 0 5% 0;
+}
+
+#faqs-holder h1 {
+  text-align: center;
+  color: black !important;
+}
+
+#faqs-holder button {
+  width: 100%;
+  text-align: left;
+}
+
+#faqs-holder p {
+  text-align: left;
+  font-size: large;
+}

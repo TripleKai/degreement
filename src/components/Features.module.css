@@ -1,0 +1,64 @@
+#features {
+  height: auto;
+  width: 50%;
+  justify-content: left;
+  margin-right: 50%;
+  padding: 2rem;
+  background: rgb(10, 10, 10);
+}
+
+#features b {
+  color: white !important;
+}
+
+#features p {
+  color: #84b0fc !important;
+}
+
+#features-img-holder {
+  position: absolute;
+  height: 80%;
+  width: 50%;
+  left: 50%;
+}
+
+#contract-img {
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+  height: auto;
+  width: auto;
+  top: 0%;
+  left: 25%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+#arrow-down {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  top: 45%;
+  left: 48%;
+  object-fit: cover;
+}
+
+#laptop-img {
+  position: absolute;
+  max-width: 50%;
+  max-height: 50%;
+  height: auto;
+  width: auto;
+  top: 54%;
+  left: 25%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.explanation {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  color: white;
+}

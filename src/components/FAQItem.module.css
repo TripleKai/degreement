@@ -1,0 +1,30 @@
+.faq-question {
+  display: inline-block;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #84b0fc;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.faq-question:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #84b0fc;
+}
+
+.faq-question-clicked {
+  cursor: pointer;
+  background-color: black;
+  color: #84b0fc;
+}
+
+.faq-item-answer-icon {
+  display: inline-block;
+}

@@ -1,0 +1,23 @@
+#welcome-content {
+  display: inline-block;
+  position: static;
+  height: 900%;
+  width: 100%;
+  background-color: rgb(164, 92, 187);
+  z-index: 2;
+}
+
+#welcome-content section {
+  margin: 6rem 0;
+  color: black;
+}
+
+#welcome-content h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  color: #84b0fc;
+}
+
+#welcome-content b {
+  color: #84b0fc;
+}

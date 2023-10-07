@@ -1,0 +1,65 @@
+#problem-solution {
+  height: auto;
+  width: 50%;
+  justify-content: left;
+  margin-left: 50%;
+  padding: 2rem;
+  background: rgb(27, 27, 27);
+}
+
+#eye-catcher {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+#problem-solution-img-holder {
+  position: absolute;
+  height: 80%;
+  width: 50%;
+}
+
+#houses-img {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  top: 50%;
+  left: 30%;
+  object-fit: cover;
+  z-index: 3;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+#houses2-img {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  top: 15%;
+  right: 55%;
+  object-fit: cover;
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+#houses3-img {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  height: auto;
+  width: auto;
+  top: 5%;
+  left: 35%;
+  object-fit: cover;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.explanation {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  color: white;
+}

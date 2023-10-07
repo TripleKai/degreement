@@ -1,0 +1,27 @@
+#benefits {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin: 10rem 0 10rem 0;
+  padding: 1rem;
+  background: black;
+}
+
+#benefits#benefits section {
+  display: inline-block;
+  height: 20rem;
+  width: 30%;
+  margin: 1rem;
+  padding: 1rem;
+  color: black;
+  background-color: #84b0fc;
+}
+
+#benefits#benefits section p {
+  font-size: 1.2rem;
+}
+
+#benefits-holder {
+  display: flex;
+  justify-content: space-between;
+}
