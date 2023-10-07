@@ -1,6 +1,8 @@
 import FAQItem from './FaqItem';
 import LastPitch from './LastPitch';
 
+import styles from './FAQ.module.css';
+
 const FAQ = (props) => {
   const faqs = [
     {
@@ -42,8 +44,8 @@ const FAQ = (props) => {
   ];
 
   return (
-    <div id='faqs'>
-      <div id='faqs-holder'>
+    <div id={styles.faqs}>
+      <div id={styles['faqs-holder']}>
         <h1>FAQs</h1>
         {faqs.map((faq) => (
           <FAQItem

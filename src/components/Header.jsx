@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 import Contact from './Contact.jsx';
+import styles from './Header.module.css';
 
 export default function Header() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -31,21 +31,21 @@ export default function Header() {
         {contactOpen && <Contact onDone={handleContactClose} />}
       </AnimatePresence>
 
-      <header id='main-header'>
-        <motion.button id='title' onClick={handleHome}>
+      <header id={styles['main-header']}>
+        <motion.button id={styles.title} onClick={handleHome}>
           Degreement
         </motion.button>
         <motion.button
-          id='how-it-works'
+          id={styles['how-it-works']}
           onClick={handleAbout}
-          className='button'
+          // className='button'
         >
           How it Works
         </motion.button>
         <motion.button
-          id='contact'
+          id={styles.contact}
           onClick={handleContactOpen}
-          className='button'
+          // className='button'
         >
           Contact
         </motion.button>

@@ -1,6 +1,7 @@
 import { motion, useTransform } from 'framer-motion';
 
 import images from '../assets/images.js';
+import styles from './Benefits.module.css';
 
 const Benefits = (props) => {
   const yBenefits = useTransform(props.scrollY, [1200, 1400], [100, 0]);
@@ -11,10 +12,10 @@ const Benefits = (props) => {
   );
 
   return (
-    <div id='benefits'>
+    <div id={styles.benefits}>
       <h1>With Degreement, you and your team will be able to</h1>
       <motion.div
-        id='benefits-holder'
+        id={styles['benefits-holder']}
         style={{ y: yBenefits, opacity: opacityBenefits }}
       >
         <section>

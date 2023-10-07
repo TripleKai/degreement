@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
+import styles from './FAQItem.module.css';
+
 const FAQItem = (props) => {
   const [isOpened, setIsOpened] = useState(false);
 
@@ -9,8 +11,8 @@ const FAQItem = (props) => {
   };
 
   const faqItemClasses = isOpened
-    ? 'faq-question faq-question-clicked'
-    : 'faq-question';
+    ? styles['faq-question'] + ' ' + styles['faq-question-clicked']
+    : styles['faq-question'];
 
   return (
     <>
@@ -19,7 +21,7 @@ const FAQItem = (props) => {
           animate={{
             rotate: isOpened ? 180 : 0,
           }}
-          className='faq-item-answer-icon'
+          className={styles['faq-item-answer-icon']}
         >
           &#x25BC;
         </motion.span>

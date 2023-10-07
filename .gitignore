@@ -11,12 +11,17 @@ node_modules
 dist
 dist-ssr
 *.local
+*.zip
 
 # Editor directories and files
 .vscode/*
+public/
 !.vscode/extensions.json
 .idea
 .DS_Store
+.eslintrc.cjs
+package-lock.json
+vite.config.js
 *.suo
 *.ntvs*
 *.njsproj

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import useInput from '../hooks/use-input';
 import images from '../assets/images.js';
+import styles from './WelcomeHeader.module.css';
 
 const WelcomeHeader = (props) => {
   const {
@@ -66,19 +67,19 @@ const WelcomeHeader = (props) => {
   const yText = useTransform(props.params.scrollY, [0, 500], [0, 300]);
   const opacityText = useTransform(props.params.scrollY, [0, 500], [1, 0]);
 
-  const firstNameInputClasses = firstNameError ? 'invalid' : '';
-  const lastNameInputClasses = lastNameError ? 'invalid' : '';
-  const emailInputClasses = emailError ? 'invalid' : '';
+  const firstNameInputClasses = firstNameError ? styles.invalid : '';
+  const lastNameInputClasses = lastNameError ? styles.invalid : '';
+  const emailInputClasses = emailError ? styles.invalid : '';
 
   return (
     <motion.header
-      id='welcome-header'
+      id={styles['welcome-header']}
       initial={{ opacity: 0 }}
       animate={{ opacity: [0, 0.25, 0.5, 0.75, 1] }}
       exit={{ opacity: 1 }}
     >
       <motion.div
-        id='welcome-header-content'
+        id={styles['welcome-header-content']}
         style={{
           // scale: scaleText,
           y: yText,
@@ -99,7 +100,10 @@ const WelcomeHeader = (props) => {
           <h2 style={{ color: '#84b0fc' }}>Enter your information</h2>
         )}
         {!props.params.trial && (
-          <Link id='request-trial' onClick={props.params.requestTrialHandler}>
+          <Link
+            id={styles['request-trial']}
+            onClick={props.params.requestTrialHandler}
+          >
             Request Free Trial
           </Link>
         )}
@@ -109,7 +113,10 @@ const WelcomeHeader = (props) => {
             animate={{ opacity: [0, 0.5, 1] }}
             exit={{ opacity: 0 }}
           >
-            <form id='request-trial-form' className='form-style'>
+            <form
+              id={styles['request-trial-form']}
+              className={styles['form-style']}
+            >
               <input
                 id='first-name'
                 className={firstNameInputClasses}
@@ -120,7 +127,7 @@ const WelcomeHeader = (props) => {
                 value={enteredFirstName}
               ></input>
               {firstNameError && (
-                <p className='input-error'>
+                <p className={styles['input-error']}>
                   Please enter a first name before sending
                 </p>
               )}
@@ -134,7 +141,7 @@ const WelcomeHeader = (props) => {
                 value={enteredLastName}
               ></input>
               {lastNameError && (
-                <p className='input-error'>
+                <p className={styles['input-error']}>
                   Please enter a last name before sending
                 </p>
               )}
@@ -148,20 +155,20 @@ const WelcomeHeader = (props) => {
                 value={enteredEmail}
               ></input>
               {emailError && (
-                <p className='input-error'>
+                <p className={styles['input-error']}>
                   Please enter a valid email before sending
                 </p>
               )}
-              <div className='form-buttons'>
+              <div className={styles['form-buttons']}>
                 <Link
-                  id='send-request-trial'
+                  id={styles['send-request-trial']}
                   onClick={props.params.submitHandler}
                 >
                   {!props.params.isSending && <>Send</>}
                   {props.params.isSending && (
-                    <div className='circle-loader-container'>
+                    <div className={styles['circle-loader-container']}>
                       <motion.span
-                        className='circle-loader'
+                        className={styles['circle-loader']}
                         animate={{ rotate: 360 }}
                         transition={{
                           loop: Infinity,
@@ -173,7 +180,7 @@ const WelcomeHeader = (props) => {
                   )}
                 </Link>
                 <Link
-                  id='cancel-request-trial'
+                  id={styles['cancel-request-trial']}
                   onClick={props.params.cancelHandler}
                 >
                   Cancel
@@ -198,7 +205,7 @@ const WelcomeHeader = (props) => {
         )}
       </motion.div>
       <motion.img
-        id='handshake-img'
+        id={styles['handshake-img']}
         style={{ opacity: opacityHandshake }}
         src={images.handshakeImg}
       />

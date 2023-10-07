@@ -7,6 +7,8 @@ import Features from '../components/Features';
 import Benefits from '../components/Benefits';
 import ProblemSolution from '../components/ProblemSolution';
 import WelcomeHeader from '../components/WelcomeHeader';
+import styles from './Welcome.module.css';
+import stylesWH from '../components/WelcomeHeader.module.css';
 
 export default function WelcomePage() {
   const [trial, setTrial] = useState(false);
@@ -73,7 +75,7 @@ export default function WelcomePage() {
 
   const requestTrialHandler = () => {
     document
-      .getElementById('welcome-header')
+      .getElementById(stylesWH['welcome-header'])
       ?.scrollIntoView({ behavior: 'smooth' });
     setTrial(true);
   };
@@ -109,7 +111,7 @@ export default function WelcomePage() {
     <>
       <Header />
       <WelcomeHeader params={params} />
-      <main id='welcome-content'>
+      <main id={styles['welcome-content']}>
         <ProblemSolution scrollY={scrollY} />
         <Benefits scrollY={scrollY} />
         <Features scrollY={scrollY} />

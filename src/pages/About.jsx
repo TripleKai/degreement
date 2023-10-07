@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 
 import Header from '../components/Header.jsx';
+import styles from './About.module.css';
 
 export default function AboutPage() {
   return (
     <>
       <Header />
       <motion.header
-        id='process'
+        id={styles.process}
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0.25, 0.5, 0.75, 1] }}
         exit={{ opacity: 1 }}
