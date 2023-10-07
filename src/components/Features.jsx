@@ -12,30 +12,7 @@ const Features = (props) => {
   );
 
   return (
-    <>
-      <motion.div
-        id={styles['features-img-holder']}
-        style={{ opacity: opacityContracts, x: xContracts }}
-      >
-        <img
-          id={styles['contract-img']}
-          // style={{ opacity: opacityCity, y: yCity }}
-          // animate={{ opacity: 1 }}
-          src={images.contractImg}
-        />
-        <img
-          id={styles['arrow-down']}
-          // style={{ opacity: opacityCity, y: yCity }}
-          // animate={{ opacity: 1 }}
-          src={images.arrowDownIcon}
-        />
-        <img
-          id={styles['laptop-img']}
-          // style={{ opacity: opacityCity, y: yCity }}
-          // animate={{ opacity: 1 }}
-          src={images.laptopImg}
-        />
-      </motion.div>
+    <div id={styles['features-holder']}>
       <motion.div id={styles.features}>
         <h1>What Tools Are Included?</h1>
         <p className={styles.explanation}>
@@ -77,7 +54,17 @@ const Features = (props) => {
           </i>
         </p>
       </motion.div>
-    </>
+      <motion.div
+        id={styles['features-img-holder']}
+        style={{ opacity: opacityContracts, x: xContracts }}
+      >
+        <div id={styles['features-holder2']}>
+          <img id={styles['contract-img']} src={images.contractImg} />
+          <img id={styles['arrow-down']} src={images.arrowDownIcon} />
+          <img id={styles['laptop-img']} src={images.laptopImg} />
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

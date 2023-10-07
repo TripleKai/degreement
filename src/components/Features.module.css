@@ -1,8 +1,14 @@
+#features-holder {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
 #features {
+  display: inline-block;
   height: auto;
   width: 50%;
   justify-content: left;
-  margin-right: 50%;
   padding: 2rem;
   background: rgb(10, 10, 10);
 }
@@ -16,20 +22,31 @@
 }
 
 #features-img-holder {
-  position: absolute;
-  height: 80%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  height: auto;
   width: 50%;
-  left: 50%;
+}
+
+#features-holder2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: 100%;
 }
 
 #contract-img {
   position: absolute;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 40%;
+  max-height: 40%;
   height: auto;
   width: auto;
-  top: 0%;
-  left: 25%;
+  top: 5%;
+  left: 30%;
   object-fit: cover;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
@@ -41,24 +58,24 @@
   height: auto;
   width: auto;
   top: 45%;
-  left: 48%;
+  right: 49%;
   object-fit: cover;
 }
 
 #laptop-img {
   position: absolute;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 40%;
+  max-height: 40%;
   height: auto;
   width: auto;
-  top: 54%;
-  left: 25%;
+  bottom: 5%;
+  left: 30%;
   object-fit: cover;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .explanation {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 2rem 0;
   color: white;
 }

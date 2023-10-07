@@ -12,29 +12,16 @@ const ProblemSolution = (props) => {
   );
 
   return (
-    <>
+    <div id={styles['problem-solution-holder']}>
       <motion.div
         id={styles['problem-solution-img-holder']}
         style={{ opacity: opacityHouses, x: xHouses }}
       >
-        <img
-          id={styles['houses-img']}
-          // style={{ opacity: opacityCity, y: yCity }}
-          // animate={{ opacity: 1 }}
-          src={images.housesImg}
-        />
-        <img
-          id={styles['houses2-img']}
-          // style={{ opacity: opacityCity, y: yCity }}
-          // animate={{ opacity: 1 }}
-          src={images.houses2Img}
-        />
-        <img
-          id={styles['houses3-img']}
-          // style={{ opacity: opacityCity, y: yCity }}
-          // animate={{ opacity: 1 }}
-          src={images.houses3Img}
-        />
+        <div id={styles['problem-solution-img-holder2']}>
+          <img id={styles['houses-img']} src={images.housesImg} />
+          <img id={styles['houses2-img']} src={images.houses2Img} />
+          <img id={styles['houses3-img']} src={images.houses3Img} />
+        </div>
       </motion.div>
       <motion.div id={styles['problem-solution']}>
         <h1>How Do You Thrive in a Difficult Real Estate Market?</h1>
@@ -53,16 +40,17 @@ const ProblemSolution = (props) => {
         </p>
         <p className={styles.explanation}>
           <b>Why take the conventional route</b> when creative finance options
-          exist? On top of that, today's technology enables the possibility of
-          automating contractual agreements through smart contracts. This allows
-          replacement of intermediaries, such as Title companies. This empowers
-          your clients to save huge on time and fees while negotiating financing
-          terms that suit all parties. Moreover, a purely digital process makes
-          the experience of seller financing intuitive for both agents and
-          clients.
+          exist? Both buyer and seller can negotiate financing terms that suit
+          them best without depending on external lenders. Furthermore, today's
+          technology enables the possibility of automating contractual
+          agreements through smart contracts. This allows replacement of
+          intermediaries, such as Title companies, and empowers your clients to
+          save on closing fees and shorten the time until closing by weeks.
+          Moreover, a purely digital process makes the experience of seller
+          financing intuitive for both agents and clients.
         </p>
       </motion.div>
-    </>
+    </div>
   );
 };
 

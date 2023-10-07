@@ -38,14 +38,12 @@ export default function Header() {
         <motion.button
           id={styles['how-it-works']}
           onClick={handleAbout}
-          // className='button'
         >
           How it Works
         </motion.button>
         <motion.button
           id={styles.contact}
           onClick={handleContactOpen}
-          // className='button'
         >
           Contact
         </motion.button>

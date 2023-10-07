@@ -81,7 +81,6 @@ const WelcomeHeader = (props) => {
       <motion.div
         id={styles['welcome-header-content']}
         style={{
-          // scale: scaleText,
           y: yText,
           opacity: opacityText,
         }}
@@ -97,7 +96,13 @@ const WelcomeHeader = (props) => {
           </h2>
         )}
         {props.params.trial && (
-          <h2 style={{ color: '#84b0fc' }}>Enter your information</h2>
+          <>
+            <h2 style={{ color: 'rgb(164, 92, 187)' }}>
+              Degreement is currently under development. Request a free trial
+              for when its ready and stay up to date on its development.
+            </h2>
+            <h2 style={{ color: '#84b0fc' }}>Enter your information</h2>
+          </>
         )}
         {!props.params.trial && (
           <Link
