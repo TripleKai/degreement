@@ -1,10 +1,21 @@
 #benefits {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  text-align: center;
+  padding: 10rem 0 10rem 0;
+  background-image: url('../assets/pexels-kelly-3030272.jpg');
+  background-size: cover;
+}
+
+#benefits-backdrop {
   height: auto;
   width: 100%;
-  text-align: center;
-  margin: 10rem 0 10rem 0;
-  padding: 1rem;
-  background: black;
+  padding: 2rem 0 2rem 0;
+  background-color: black;
+  z-index: 2;
 }
 
 #benefits#benefits section {
@@ -24,4 +35,12 @@
 #benefits-holder {
   display: flex;
   justify-content: space-between;
+}
+
+#houses-img {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
