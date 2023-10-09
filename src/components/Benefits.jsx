@@ -22,17 +22,18 @@ const Benefits = (props) => {
           >
             <section>
               <img src={images.handshakeIcon} />
-              <h2>Close more deals than before</h2>
+              <h2>Close deals faster than ever before</h2>
               <p>
-                by leveraging creative finance as a seamless and desired option
+                by utlizing software in place of manual processes to save weeks
+                worth of time until closing
               </p>
             </section>
             <section>
               <img src={images.partnerIcon} />
               <h2>Attract more leads</h2>
               <p>
-                by being known for faster closing times and cheaper transaction
-                costs, empowering both buyers and sellers
+                by leveraging creative finance as a seamless and desired option,
+                empowering both buyers and sellers
               </p>
             </section>
             <section>

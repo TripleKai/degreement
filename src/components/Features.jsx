@@ -4,10 +4,10 @@ import images from '../assets/images.js';
 import styles from './Features.module.css';
 
 const Features = (props) => {
-  const xContracts = useTransform(props.scrollY, [1800, 2200], [-200, 0]);
+  const xContracts = useTransform(props.scrollY, [1500, 1900], [-200, 0]);
   const opacityContracts = useTransform(
     props.scrollY,
-    [1800, 2200, 2400],
+    [1500, 1900, 2400],
     [0, 1, 1]
   );
 
