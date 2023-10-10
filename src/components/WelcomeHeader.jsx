@@ -1,6 +1,7 @@
 import { motion, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import RequestTrialForm from './RequestTrialForm';
 import useInput from '../hooks/use-input';
 import images from '../assets/images.js';
 import styles from './WelcomeHeader.module.css';
@@ -58,6 +59,24 @@ const WelcomeHeader = (props) => {
     resetEmailInput,
   });
 
+  let isSending = props.params.isSending;
+
+  const params = {
+    isSending,
+    enteredFirstName,
+    enteredLastName,
+    enteredEmail,
+    firstNameError,
+    lastNameError,
+    emailError,
+    firstNameChangeHandler,
+    lastNameChangeHandler,
+    emailChangeHandler,
+    firstNameBlurHandler,
+    lastNameBlurHandler,
+    emailBlurHandler,
+  };
+
   const opacityHandshake = useTransform(
     props.params.scrollY,
     [0, 200, 300, 500],
@@ -66,10 +85,6 @@ const WelcomeHeader = (props) => {
 
   const yText = useTransform(props.params.scrollY, [0, 500], [0, 300]);
   const opacityText = useTransform(props.params.scrollY, [0, 500], [1, 0]);
-
-  const firstNameInputClasses = firstNameError ? styles.invalid : '';
-  const lastNameInputClasses = lastNameError ? styles.invalid : '';
-  const emailInputClasses = emailError ? styles.invalid : '';
 
   return (
     <motion.header
@@ -118,80 +133,11 @@ const WelcomeHeader = (props) => {
             animate={{ opacity: [0, 0.5, 1] }}
             exit={{ opacity: 0 }}
           >
-            <form
-              id={styles['request-trial-form']}
-              className={styles['form-style']}
-            >
-              <input
-                id='first-name'
-                className={firstNameInputClasses}
-                placeholder='First Name'
-                type='text'
-                onChange={firstNameChangeHandler}
-                onBlur={firstNameBlurHandler}
-                value={enteredFirstName}
-              ></input>
-              {firstNameError && (
-                <p className={styles['input-error']}>
-                  Please enter a first name before sending
-                </p>
-              )}
-              <input
-                id='last-name'
-                className={lastNameInputClasses}
-                placeholder='Last Name'
-                type='text'
-                onChange={lastNameChangeHandler}
-                onBlur={lastNameBlurHandler}
-                value={enteredLastName}
-              ></input>
-              {lastNameError && (
-                <p className={styles['input-error']}>
-                  Please enter a last name before sending
-                </p>
-              )}
-              <input
-                id='email'
-                className={emailInputClasses}
-                placeholder='Email'
-                type='email'
-                onChange={emailChangeHandler}
-                onBlur={emailBlurHandler}
-                value={enteredEmail}
-              ></input>
-              {emailError && (
-                <p className={styles['input-error']}>
-                  Please enter a valid email before sending
-                </p>
-              )}
-              <div className={styles['form-buttons']}>
-                <Link
-                  id={styles['send-request-trial']}
-                  onClick={props.params.submitHandler}
-                >
-                  {!props.params.isSending && <>Send</>}
-                  {props.params.isSending && (
-                    <div className={styles['circle-loader-container']}>
-                      <motion.span
-                        className={styles['circle-loader']}
-                        animate={{ rotate: 360 }}
-                        transition={{
-                          loop: Infinity,
-                          duration: 1,
-                          ease: 'linear',
-                        }}
-                      />
-                    </div>
-                  )}
-                </Link>
-                <Link
-                  id={styles['cancel-request-trial']}
-                  onClick={props.params.cancelHandler}
-                >
-                  Cancel
-                </Link>
-              </div>
-            </form>
+            <RequestTrialForm
+              params={params}
+              onSubmit={props.params.submitHandler}
+              onCancel={props.params.cancelHandler}
+            />
           </motion.div>
         )}
         {props.params.isSent && !props.params.trial && (
