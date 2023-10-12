@@ -16,42 +16,40 @@ const Features = (props) => {
       <motion.div id={styles.features}>
         <h1>What Tools Are Included?</h1>
         <p className={styles.explanation}>
-          <b> + Smart Contract Offer Letter -</b>{' '}
-          <i>
-            Easily create and modify smart contracts to fit your client's seller
-            finance offer or proposal. You and your clients have access and can
-            stay updated in real-time.
-          </i>
+          <b> + Smart Contract Offer Letter and Note Creation - </b>
+          Easily create and modify smart contracts to fit your client's seller
+          finance offer or proposal. Create the seller's note as a digital
+          document as well. All contracts are shared documents - you, your
+          client, and counterparty have access and can negotiate and make
+          ammendments online to stay updated in real-time.
         </p>
         <p className={styles.explanation}>
-          <b>+ Instant Title Search -</b>{' '}
-          <i>
-            Conduct a preliminary Title search through the automated search
-            system. The tool integrates multiple industry-standard title search
-            softwares to provide a comprehensive report.
-          </i>
+          <b>+ Instant Title Search - </b>
+          Conduct a preliminary Title search through the automated search
+          system. The tool integrates multiple industry-standard title search
+          softwares to provide an aggregated, comprehensive report.
         </p>
         <p className={styles.explanation}>
-          <b>+ Virtual Escrow -</b>{' '}
-          <i>
-            Hold funds directly on software without the need to open or maintain
-            traditional accounts. Funds are stored directly on the blockchain,
-            impervious to fraud or manipulation.
-          </i>
+          <b>+ Virtual Escrow - </b>
+          Hold funds directly on software without the need to open or maintain
+          traditional accounts. Funds (for earnest money, downpayments, seller
+          credits, etc.) are stored directly on the blockchain, impervious to
+          fraud or manipulation. Documents, such as deed and warranties, can
+          also be stored.
         </p>
         <p className={styles.explanation}>
-          <b>+ Virtual Notary -</b>{' '}
-          <i>
-            Clearly validate transactions by accessing on-chain data. The
-            validation serves as the notary.
-          </i>
+          <b>+ Virtual Notary - </b>
+          Conduct notary through the integrated remote notary and clearly
+          validate transactions by accessing on-chain data. The validation
+          serves as the notary.
         </p>
         <p className={styles.explanation}>
-          <b>+ Closing Transaction -</b>{' '}
-          <i>
-            Conduct the closing transaction and documentation through digital
-            signature and smart contract contingency fulfillment.
-          </i>
+          <b>+ Closing Transaction - </b>
+          Conduct the closing transaction and documentation through digital
+          signature and smart contract contingency fulfillment. All held funds
+          and documents are released to appropriate parties, including agent
+          commissions. Degreement will send the recording request to the local
+          Register of Deeds office for you.
         </p>
       </motion.div>
       <motion.div

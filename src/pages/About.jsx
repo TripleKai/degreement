@@ -25,8 +25,9 @@ export default function AboutPage() {
           rejections, and acceptances of terms
         </h2>
         <h2>
-          Once buyer and seller accept terms and conditions, title search is
-          conducted instantly to generate a report
+          Once buyer and seller accept terms and conditions, seller note is
+          created and title search is conducted to generate a report in short
+          order
         </h2>
         <h2>
           Buyer finds the best title insurance provider based on the generated
@@ -39,10 +40,15 @@ export default function AboutPage() {
           and seller credits) to the Smart Contract
         </h2>
         <h2>
-          Closing can now be conducted on an agreed-upon time, where buyer and
-          seller sign digital signatures to satisfy the Smart Contract’s
-          conditions, which releases the held funds to the seller and the deed
-          (+ other documents and seller credits) to the buyer.{' '}
+          Closing can now be conducted by remote notary on an agreed-upon time,
+          where buyer and seller sign digital signatures to satisfy the Smart
+          Contract’s conditions, which releases the held funds to the seller,
+          the deed (+ other documents and seller credits) to the buyer, and
+          commissions to the agents.{' '}
+        </h2>
+        <h2>
+          Degreement sends recording request to the local Register of Deeds
+          office to officially close the transaction.
         </h2>
       </motion.header>
     </>

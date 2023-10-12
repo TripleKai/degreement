@@ -1,6 +1,5 @@
 # BEGIN Newfold Headers
 <IfModule mod_headers.c>
-	Header set Content-Security-Policy "upgrade-insecure-requests" env=HTTPS
 	Header set X-Newfold-Cache-Level "2"
 </IfModule>
 # END Newfold Headers

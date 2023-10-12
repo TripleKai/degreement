@@ -30,8 +30,8 @@ const FAQ = (props) => {
       answer:
         'No. There is no sense for a company to create a cryptocurrency or blockchain for itself. \
       Blockchains derive their utility from decentralization - if we were to create our own blockchain, it would be centralized. \
-      It is much more efficient to use a simple database for any operational data instead. As for investors, \
-      if we ever seek investment, it would be through traditional stocks - we prefer to stick to regulated securities :)',
+      It is much more efficient to use a simple database for any operational data instead. If investments are sought, \
+      we would prefer to stick to regulated securities.',
     },
     {
       id: 4,
