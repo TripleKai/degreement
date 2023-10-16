@@ -14,9 +14,12 @@ export default function AboutPage() {
         exit={{ opacity: 1 }}
       >
         <h1>How it works</h1>
-        <h2>Offer contract is uploaded by the buyer to Degreement</h2>
         <h2>
-          Degreement creates a Smart Contract that encapsulate its contingencies
+          Offer contract and financing proposal are created by the buyer on
+          Degreement
+        </h2>
+        <h2>
+          Degreement creates a Smart Contract that encapsulates contingencies
           and terms
         </h2>
         <h2>
@@ -48,7 +51,7 @@ export default function AboutPage() {
         </h2>
         <h2>
           Degreement sends recording request to the local Register of Deeds
-          office to officially close the transaction.
+          office to officially record the transaction.
         </h2>
       </motion.header>
     </>
