@@ -22,9 +22,9 @@ const Benefits = (props) => {
           >
             <section>
               <img src={images.handshakeIcon} />
-              <h2>Close deals faster than ever before</h2>
+              <h2>Close transactions in days rather than weeks</h2>
               <p>
-                by utlizing software in place of manual processes to save weeks
+                by utilizing software in place of manual processes to save weeks
                 worth of time until closing
               </p>
             </section>

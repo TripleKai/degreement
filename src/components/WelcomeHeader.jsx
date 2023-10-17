@@ -148,7 +148,7 @@ const WelcomeHeader = (props) => {
         )}
         {!props.params.isSent && !props.params.trial && (
           <>
-            <h3>Close more deals than before</h3>
+            <h3>Close transactions in days rather than weeks</h3>
             <h3>Attract more leads</h3>
             <h3>Become a one-stop-shop for all FSBO clients</h3>
             <h3>Become recognized as an innovative leader</h3>
