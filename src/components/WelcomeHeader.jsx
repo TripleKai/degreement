@@ -100,21 +100,23 @@ const WelcomeHeader = (props) => {
           opacity: opacityText,
         }}
       >
-        <h1>Seller Financing Made Easy</h1>
-        <h2>
-          Close sales faster and cheaper for clients with Smart Contracts and
-          Blockchain technology
-        </h2>
+        <h1>Creative Financing Made Easy</h1>
         {!props.params.trial && (
-          <h2>
-            <i>Opt-out of antiquated systems</i>
-          </h2>
+          <>
+            <h2>
+              Close sales faster and cheaper for clients with Creative Finance,
+              Smart Contracts, and Blockchain Technology
+            </h2>
+            <h2>
+              <i>Opt-out of antiquated systems</i>
+            </h2>
+          </>
         )}
         {props.params.trial && (
           <>
             <h2 style={{ color: 'rgb(164, 92, 187)' }}>
               Degreement is currently under development. Request a free trial
-              for when its ready and stay up to date on its development.
+              for when it's ready and stay up to date on its development.
             </h2>
             <h2 style={{ color: '#84b0fc' }}>Enter your information</h2>
           </>
