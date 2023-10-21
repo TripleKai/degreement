@@ -115,8 +115,8 @@ const WelcomeHeader = (props) => {
         {props.params.trial && (
           <>
             <h2 style={{ color: 'rgb(164, 92, 187)' }}>
-              Degreement is currently under development. Request a free trial
-              for when it's ready and stay up to date on its development.
+              Degreement is currently under development. Register to get free
+              access once it's available and stay up to date on its development.
             </h2>
             <h2 style={{ color: '#84b0fc' }}>Enter your information</h2>
           </>
@@ -126,7 +126,7 @@ const WelcomeHeader = (props) => {
             id={styles['request-trial']}
             onClick={props.params.requestTrialHandler}
           >
-            Request Free Trial
+            Register for Access
           </Link>
         )}
         {props.params.trial && (
