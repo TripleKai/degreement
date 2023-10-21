@@ -17,11 +17,11 @@ const Features = (props) => {
         <h1>What Tools Are Included?</h1>
         <p className={styles.explanation}>
           <b> + Smart Contract Offer Letter and Note Creation - </b>
-          Easily create and modify smart contracts to fit your client's seller
-          finance offer or proposal. Create the seller's note as a digital
-          document as well. All contracts are shared documents - you, your
-          client, and counterparty have access and can negotiate and make
-          ammendments online to stay updated in real-time.
+          Easily create and modify smart contracts to fit your seller finance
+          offer or proposal. Create the seller's note as a digital document as
+          well. All contracts are shared documents - you and your counterparty
+          have access, can negotiate, and make ammendments online to stay
+          updated in real-time.
         </p>
         <p className={styles.explanation}>
           <b>+ Instant Title Search - </b>

@@ -35,8 +35,7 @@ const ProblemSolution = (props) => {
           the market and business must prepare for a slow-down. As history
           shows, and as you may have experienced, this results in fewer buyers
           and even fewer sellers. Conventional bank loans with high interest
-          rates become the bottleneck for you and your clients for an indefinite
-          period of time.
+          rates become a serious bottleneck for an indefinite period of time.
         </p>
         <p className={styles.explanation}>
           <b>Why take the conventional route</b> when creative finance options
@@ -44,10 +43,10 @@ const ProblemSolution = (props) => {
           them best without depending on external lenders. Furthermore, today's
           technology enables the possibility of automating contractual
           agreements through smart contracts. This allows replacement of
-          intermediaries, such as Title companies, and empowers your clients to
-          save on closing fees and shorten the time until closing by weeks.
-          Moreover, a purely digital process makes the experience of seller
-          financing intuitive for both agents and clients.
+          intermediaries, such as Title companies, and allows for savings in
+          closing fees and shorten the time until closing by weeks. Moreover, a
+          purely digital process makes the experience of seller financing
+          intuitive for all parties.
         </p>
       </motion.div>
     </div>

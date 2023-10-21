@@ -38,10 +38,10 @@ const Benefits = (props) => {
             </section>
             <section>
               <img src={images.paymentsIcon} />
-              <h2>Become a one-stop-shop for all FSBO clients</h2>
+              <h2>Become a one-stop-shop for all FSBO transactions</h2>
               <p>
-                providing the additional value of a Title company, escrow, and
-                notary service all in one and charge for it
+                using software in place of a Title company, Escrow, and
+                Notary service all in one
               </p>
             </section>
             <section>
@@ -49,7 +49,7 @@ const Benefits = (props) => {
               <h2>Become recognized as an innovative leader</h2>
               <p>
                 in the industry by using cutting-edge technology to drastically
-                improve the transaction experience for clients
+                improve the transaction experience
               </p>
             </section>
           </motion.div>
