@@ -104,8 +104,8 @@ const WelcomeHeader = (props) => {
         {!props.params.trial && (
           <>
             <h2>
-              Close sales faster and cheaper for clients with Creative Finance,
-              Smart Contracts, and Blockchain Technology
+              Close property transactions faster and cheaper with Creative
+              Finance, Smart Contracts, and Blockchain Technology
             </h2>
             <h2>
               <i>Opt-out of antiquated systems</i>

@@ -45,8 +45,8 @@ const ProblemSolution = (props) => {
           agreements through smart contracts. This allows replacement of
           intermediaries, such as Title companies, and allows for savings in
           closing fees and shorten the time until closing by weeks. Moreover, a
-          purely digital process makes the experience of seller financing
-          intuitive for all parties.
+          purely digital process makes the experience of seller financing or
+          "Subject To" deal structure intuitive for all parties.
         </p>
       </motion.div>
     </div>
