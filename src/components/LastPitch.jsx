@@ -8,7 +8,7 @@ const LastPitch = (props) => {
       <div id={styles['last-pitch-holder']}>
         <h1>Serve your clients better with Degreement</h1>
         <Link id={styles['request-trial-bottom']} onClick={props.onRequest}>
-          Request Free Trial
+          Register Now
         </Link>
       </div>
     </div>

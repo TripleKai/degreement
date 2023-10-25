@@ -107,16 +107,17 @@ const WelcomeHeader = (props) => {
               Close property transactions faster and cheaper with Creative
               Finance, Smart Contracts, and Blockchain Technology
             </h2>
-            <h2>
-              <i>Opt-out of antiquated systems</i>
-            </h2>
+            <h3>
+              <i>Free Lifetime Access offer available only until 12/31/2023</i>
+            </h3>
           </>
         )}
         {props.params.trial && (
           <>
             <h2 style={{ color: 'rgb(164, 92, 187)' }}>
-              Degreement is currently under development. Register to get free
-              access once it's available and stay up to date on its development.
+              Degreement is currently under development. Register now to get
+              free lifetime access once it's available and stay up to date on
+              its development.
             </h2>
             <h2 style={{ color: '#84b0fc' }}>Enter your information</h2>
           </>
@@ -126,7 +127,7 @@ const WelcomeHeader = (props) => {
             id={styles['request-trial']}
             onClick={props.params.requestTrialHandler}
           >
-            Register for Access
+            Register Now
           </Link>
         )}
         {props.params.trial && (
@@ -143,17 +144,20 @@ const WelcomeHeader = (props) => {
           </motion.div>
         )}
         {props.params.isSent && !props.params.trial && (
-          <h1>
-            Congrats {JSON.parse(localStorage.getItem('firstName'))}, your free
-            trial request is registered! Check your email for further updates.
-          </h1>
+          <h2>
+            <b>
+              Congrats {JSON.parse(localStorage.getItem('firstName'))}, you will
+              have free lifetime access once Degreement is launched! Check your
+              email for further updates.
+            </b>
+          </h2>
         )}
         {!props.params.isSent && !props.params.trial && (
           <>
-            <h3>Close transactions in days rather than weeks</h3>
-            <h3>Attract more leads</h3>
-            <h3>Become a one-stop-shop for all FSBO transactions</h3>
-            <h3>Become recognized as an innovative leader</h3>
+            <h4>Close transactions in days rather than weeks</h4>
+            <h4>Attract more leads</h4>
+            <h4>Become a one-stop-shop for all FSBO transactions</h4>
+            <h4>Become recognized as an innovative leader</h4>
           </>
         )}
       </motion.div>

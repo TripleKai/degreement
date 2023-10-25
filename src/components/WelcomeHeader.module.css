@@ -6,7 +6,15 @@
   height: 100vh;
 }
 
+#welcome-header b {
+  color: #84b0fc;
+}
+
 #welcome-header h3 {
+  color: #fc8484;
+}
+
+#welcome-header h4 {
   color: rgb(164, 92, 187);
 }
 
