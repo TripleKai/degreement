@@ -7,7 +7,7 @@ const FAQ = (props) => {
   const faqs = [
     {
       id: 1,
-      question: 'Why use Degreement instead of a Title company?',
+      question: 'Why use Degreement instead of a traditional Title company?',
       answer:
         'If saving days and weeks worth of time in closing a sale matters to you, use Degreement. We also make \
         the seller financing process simple and intuitive, allowing you and your client to focus on only the most \
