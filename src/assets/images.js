@@ -3,7 +3,10 @@ import housesImg from './pexels-palo-cech-286744.jpg';
 import houses2Img from './pexels-pierre-blache-2901212.jpg';
 import houses3Img from './pexels-evgeny-tchebotarev-2187605.jpg';
 import handshakeImg from './pexels-pavel-danilyuk-8112090.jpg';
+import handshake2Img from './pexels-ketut-subiyanto-4963437 - Copy.jpg';
 import contractImg from './pexels-pixabay-48195.jpg';
+import cashImg from './pexels-pixabay-47344.jpg';
+import hybridImg from './pexels-luis-quintero-2471235.jpg';
 import laptopImg from './pexels-andrea-piacquadio-927451.jpg';
 
 // Icons
@@ -18,7 +21,10 @@ export default {
   houses2Img,
   houses3Img,
   handshakeImg,
+  handshake2Img,
   contractImg,
+  cashImg,
+  hybridImg,
   laptopImg,
   handshakeIcon,
   partnerIcon,

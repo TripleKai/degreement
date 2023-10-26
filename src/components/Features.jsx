@@ -57,9 +57,42 @@ const Features = (props) => {
         style={{ opacity: opacityContracts, x: xContracts }}
       >
         <div id={styles['features-holder2']}>
-          <img id={styles['contract-img']} src={images.contractImg} />
-          <img id={styles['arrow-down']} src={images.arrowDownIcon} />
-          <img id={styles['laptop-img']} src={images.laptopImg} />
+          <div id={styles['contracts-header']}>
+            <h1>Smart Contract Powered</h1>
+          </div>
+          <div className={styles['headline']}>
+            <div className={styles['headline-background']}>
+              <h1>Seller Financing</h1>
+            </div>
+            <div
+              id={styles['contract-img']}
+              className={styles['img-background']}
+            />
+          </div>
+          <div className={styles['headline']}>
+            <div className={styles['headline-background']}>
+              <h1>Subject To</h1>
+            </div>
+            <div
+              id={styles['handshake2-img']}
+              className={styles['img-background']}
+            />
+          </div>
+          <div className={styles['headline']}>
+            <div className={styles['headline-background']}>
+              <h1>Cash Offer</h1>
+            </div>
+            <div id={styles['cash-img']} className={styles['img-background']} />
+          </div>
+          <div className={styles['headline']}>
+            <div className={styles['headline-background']}>
+              <h1>Hybrid Financing</h1>
+            </div>
+            <div
+              id={styles['hybrid-img']}
+              className={styles['img-background']}
+            />
+          </div>
         </div>
       </motion.div>
     </div>

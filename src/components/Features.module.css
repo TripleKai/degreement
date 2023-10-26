@@ -22,7 +22,7 @@
 }
 
 #features-img-holder {
-  display: flex;
+  display: inline-block;
   position: relative;
   justify-content: center;
   align-content: center;
@@ -31,46 +31,41 @@
 }
 
 #features-holder2 {
-  display: flex;
-  position: relative;
+  display: block;
+  position: absolute;
   justify-content: center;
   align-content: center;
   height: auto;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 #contract-img {
-  position: absolute;
-  max-width: 40%;
-  max-height: 40%;
-  height: auto;
-  width: auto;
-  top: 5%;
-  left: 30%;
-  object-fit: cover;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  background: url('../assets/pexels-pixabay-48195.jpg');
+  background-size: cover;
 }
 
-#arrow-down {
-  position: absolute;
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  width: auto;
-  top: 45%;
-  right: 49%;
-  object-fit: cover;
+#handshake2-img {
+  background: url('../assets/pexels-ketut-subiyanto-4963437 - Copy.jpg');
+  background-size: cover;
 }
 
-#laptop-img {
-  position: absolute;
-  max-width: 40%;
-  max-height: 40%;
-  height: auto;
-  width: auto;
-  bottom: 5%;
-  left: 30%;
-  object-fit: cover;
+#cash-img {
+  background: url('../assets/pexels-pixabay-47344.jpg');
+  background-size: cover;
+}
+
+#hybrid-img {
+  background: url('../assets/pexels-luis-quintero-2471235.jpg');
+  background-size: cover;
+}
+
+#contracts-header {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+  background-color: rgb(10, 10, 10);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
@@ -78,4 +73,27 @@
   font-size: 1.2rem;
   margin: 2rem 0;
   color: white;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+  padding: 0 0 0 5em;
+  background-color: rgb(10, 10, 10);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.headline-background {
+  display: flex;
+  height: auto;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.img-background {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: 50%;
 }
