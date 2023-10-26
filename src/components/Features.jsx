@@ -1,13 +1,33 @@
 import { motion, useTransform } from 'framer-motion';
 
-import images from '../assets/images.js';
 import styles from './Features.module.css';
 
 const Features = (props) => {
-  const xContracts = useTransform(props.scrollY, [1500, 1900], [-200, 0]);
-  const opacityContracts = useTransform(
+  const xSellerFinance = useTransform(props.scrollY, [1400, 1800], [200, 0]);
+  const opacitySellerFinance = useTransform(
+    props.scrollY,
+    [1400, 1800, 2400],
+    [0, 1, 1]
+  );
+
+  const xSubTo = useTransform(props.scrollY, [1500, 1900], [200, 0]);
+  const opacitySubTo = useTransform(
     props.scrollY,
     [1500, 1900, 2400],
+    [0, 1, 1]
+  );
+
+  const xCashOffer = useTransform(props.scrollY, [1600, 2000], [200, 0]);
+  const opacityCashOffer = useTransform(
+    props.scrollY,
+    [1600, 2000, 2400],
+    [0, 1, 1]
+  );
+
+  const xHybridFinance = useTransform(props.scrollY, [1700, 2100], [200, 0]);
+  const opacityHybridFinance = useTransform(
+    props.scrollY,
+    [1700, 2100, 2400],
     [0, 1, 1]
   );
 
@@ -52,15 +72,15 @@ const Features = (props) => {
           Register of Deeds office for you.
         </p>
       </motion.div>
-      <motion.div
-        id={styles['features-img-holder']}
-        style={{ opacity: opacityContracts, x: xContracts }}
-      >
+      <div id={styles['features-img-holder']}>
         <div id={styles['features-holder2']}>
           <div id={styles['contracts-header']}>
             <h1>Smart Contract Powered</h1>
           </div>
-          <div className={styles['headline']}>
+          <motion.div
+            className={styles['headline']}
+            style={{ opacity: opacitySellerFinance, x: xSellerFinance }}
+          >
             <div className={styles['headline-background']}>
               <h1>Seller Financing</h1>
             </div>
@@ -68,8 +88,11 @@ const Features = (props) => {
               id={styles['contract-img']}
               className={styles['img-background']}
             />
-          </div>
-          <div className={styles['headline']}>
+          </motion.div>
+          <motion.div
+            className={styles['headline']}
+            style={{ opacity: opacitySubTo, x: xSubTo }}
+          >
             <div className={styles['headline-background']}>
               <h1>Subject To</h1>
             </div>
@@ -77,14 +100,20 @@ const Features = (props) => {
               id={styles['handshake2-img']}
               className={styles['img-background']}
             />
-          </div>
-          <div className={styles['headline']}>
+          </motion.div>
+          <motion.div
+            className={styles['headline']}
+            style={{ opacity: opacityCashOffer, x: xCashOffer }}
+          >
             <div className={styles['headline-background']}>
               <h1>Cash Offer</h1>
             </div>
             <div id={styles['cash-img']} className={styles['img-background']} />
-          </div>
-          <div className={styles['headline']}>
+          </motion.div>
+          <motion.div
+            className={styles['headline']}
+            style={{ opacity: opacityHybridFinance, x: xHybridFinance }}
+          >
             <div className={styles['headline-background']}>
               <h1>Hybrid Financing</h1>
             </div>
@@ -92,9 +121,9 @@ const Features = (props) => {
               id={styles['hybrid-img']}
               className={styles['img-background']}
             />
-          </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
