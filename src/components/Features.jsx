@@ -3,31 +3,31 @@ import { motion, useTransform } from 'framer-motion';
 import styles from './Features.module.css';
 
 const Features = (props) => {
-  const xSellerFinance = useTransform(props.scrollY, [1400, 1800], [200, 0]);
+  const xSellerFinance = useTransform(props.scrollY, [1600, 2000], [200, 0]);
   const opacitySellerFinance = useTransform(
     props.scrollY,
-    [1400, 1800, 2400],
+    [1600, 2000, 2600],
     [0, 1, 1]
   );
 
-  const xSubTo = useTransform(props.scrollY, [1500, 1900], [200, 0]);
+  const xSubTo = useTransform(props.scrollY, [1700, 2100], [200, 0]);
   const opacitySubTo = useTransform(
     props.scrollY,
-    [1500, 1900, 2400],
+    [1700, 2100, 2600],
     [0, 1, 1]
   );
 
-  const xCashOffer = useTransform(props.scrollY, [1600, 2000], [200, 0]);
+  const xCashOffer = useTransform(props.scrollY, [1800, 2200], [200, 0]);
   const opacityCashOffer = useTransform(
     props.scrollY,
-    [1600, 2000, 2400],
+    [1800, 2200, 2600],
     [0, 1, 1]
   );
 
-  const xHybridFinance = useTransform(props.scrollY, [1700, 2100], [200, 0]);
+  const xHybridFinance = useTransform(props.scrollY, [1900, 2300], [200, 0]);
   const opacityHybridFinance = useTransform(
     props.scrollY,
-    [1700, 2100, 2400],
+    [1900, 2300, 2600],
     [0, 1, 1]
   );
 

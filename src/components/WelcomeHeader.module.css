@@ -1,9 +1,10 @@
 #welcome-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 10% 10% 5% 10%;
-  height: 100vh;
+  height: 120vh;
+  width: 100%;
 }
 
 #welcome-header b {
@@ -21,15 +22,16 @@
 #welcome-header-content {
   display: inline-block;
   position: relative;
-  height: auto;
+  height: 100%;
   width: 50%;
   margin: 0 0 0 5%;
   z-index: 1;
   text-align: left;
+  font-size: 0.85vw;
 }
 
 #welcome-header-content h1 {
-  font-size: 3rem;
+  font-size: 2.5vw;
   color: #84b0fc;
   margin: 2rem 0;
 }
@@ -55,8 +57,9 @@
 }
 
 #handshake-img {
-  max-width: 100%;
-  max-height: 100%;
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
   height: auto;
   width: auto;
   margin: 0 10% 0 5%;

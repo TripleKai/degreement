@@ -41,13 +41,6 @@ const RequestTrialForm = (props) => {
         </p>
       )}
       <input
-        id='company-name'
-        placeholder='Company (optional)'
-        type='text'
-        onChange={props.params.companyNameChangeHandler}
-        value={props.params.enteredCompanyName}
-      ></input>
-      <input
         id='email'
         className={emailInputClasses}
         placeholder='Email'
@@ -61,6 +54,13 @@ const RequestTrialForm = (props) => {
           Please enter a valid email before sending
         </p>
       )}
+      <input
+        id='company-name'
+        placeholder='Company (optional)'
+        type='text'
+        onChange={props.params.companyNameChangeHandler}
+        value={props.params.enteredCompanyName}
+      ></input>
       <div className={styles['form-buttons']}>
         <Link id={styles['send-request-trial']} onClick={props.onSubmit}>
           {!props.params.isSending && <>Send</>}

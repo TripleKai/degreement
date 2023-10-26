@@ -4,10 +4,10 @@ import images from '../assets/images.js';
 import styles from './ProblemSolution.module.css';
 
 const ProblemSolution = (props) => {
-  const xHouses = useTransform(props.scrollY, [200, 500], [-100, 0]);
+  const xHouses = useTransform(props.scrollY, [400, 700], [-100, 0]);
   const opacityHouses = useTransform(
     props.scrollY,
-    [200, 500, 900, 1300],
+    [400, 700, 1100, 1500],
     [0, 1, 1, 0]
   );
 

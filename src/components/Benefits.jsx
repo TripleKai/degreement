@@ -4,31 +4,31 @@ import images from '../assets/images.js';
 import styles from './Benefits.module.css';
 
 const Benefits = (props) => {
-  const yBenefits1 = useTransform(props.scrollY, [1000, 1200], [100, 0]);
+  const yBenefits1 = useTransform(props.scrollY, [1200, 1400], [100, 0]);
   const opacityBenefits1 = useTransform(
     props.scrollY,
-    [1000, 1200, 1800, 2200],
+    [1200, 1400, 2000, 2400],
     [0, 1, 1, 0]
   );
 
-  const yBenefits2 = useTransform(props.scrollY, [1050, 1250], [100, 0]);
+  const yBenefits2 = useTransform(props.scrollY, [1250, 1450], [100, 0]);
   const opacityBenefits2 = useTransform(
     props.scrollY,
-    [1050, 1250, 1800, 2200],
+    [1250, 1450, 2000, 2400],
     [0, 1, 1, 0]
   );
 
-  const yBenefits3 = useTransform(props.scrollY, [1100, 1300], [100, 0]);
+  const yBenefits3 = useTransform(props.scrollY, [1300, 1500], [100, 0]);
   const opacityBenefits3 = useTransform(
     props.scrollY,
-    [1100, 1300, 1800, 2200],
+    [1300, 1500, 2000, 2400],
     [0, 1, 1, 0]
   );
 
-  const yBenefits4 = useTransform(props.scrollY, [1150, 1350], [100, 0]);
+  const yBenefits4 = useTransform(props.scrollY, [1350, 1550], [100, 0]);
   const opacityBenefits4 = useTransform(
     props.scrollY,
-    [1150, 1350, 1800, 2200],
+    [1350, 1550, 2000, 2400],
     [0, 1, 1, 0]
   );
 
