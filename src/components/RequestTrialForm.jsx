@@ -41,6 +41,13 @@ const RequestTrialForm = (props) => {
         </p>
       )}
       <input
+        id='company-name'
+        placeholder='Company (optional)'
+        type='text'
+        onChange={props.params.companyNameChangeHandler}
+        value={props.params.enteredCompanyName}
+      ></input>
+      <input
         id='email'
         className={emailInputClasses}
         placeholder='Email'

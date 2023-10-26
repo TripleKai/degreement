@@ -26,6 +26,12 @@ const WelcomeHeader = (props) => {
   } = useInput((value) => value.trim() !== '', props.params.isRequestAttempted);
 
   const {
+    value: enteredCompanyName,
+    valueChangedHandler: companyNameChangeHandler,
+    reset: resetCompanyNameInput,
+  } = useInput((value) => value.trim() !== '', props.params.isRequestAttempted);
+
+  const {
     value: enteredEmail,
     isValid: enteredEmailValid,
     isError: emailError,
@@ -46,6 +52,7 @@ const WelcomeHeader = (props) => {
     time: new Date().toLocaleTimeString(),
     firstName: enteredFirstName,
     lastName: enteredLastName,
+    companyName: enteredCompanyName,
     email: enteredEmail,
   };
 
@@ -56,6 +63,7 @@ const WelcomeHeader = (props) => {
     enteredEmailValid,
     resetFirstNameInput,
     resetLastNameInput,
+    resetCompanyNameInput,
     resetEmailInput,
   });
 
@@ -65,12 +73,14 @@ const WelcomeHeader = (props) => {
     isSending,
     enteredFirstName,
     enteredLastName,
+    enteredCompanyName,
     enteredEmail,
     firstNameError,
     lastNameError,
     emailError,
     firstNameChangeHandler,
     lastNameChangeHandler,
+    companyNameChangeHandler,
     emailChangeHandler,
     firstNameBlurHandler,
     lastNameBlurHandler,
@@ -154,10 +164,13 @@ const WelcomeHeader = (props) => {
         )}
         {!props.params.isSent && !props.params.trial && (
           <>
-            <h4>Close transactions in days rather than weeks</h4>
-            <h4>Attract more leads</h4>
-            <h4>Become a one-stop-shop for all FSBO transactions</h4>
-            <h4>Become recognized as an innovative leader</h4>
+            <h2>
+              <b>Close sales fast with our supported contract types</b>
+            </h2>
+            <h3>Seller Financing</h3>
+            <h3>Subject To</h3>
+            <h3>Cash Offer</h3>
+            <h3>Hybrid Financing</h3>
           </>
         )}
       </motion.div>

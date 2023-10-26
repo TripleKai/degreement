@@ -23,6 +23,7 @@ export default function WelcomePage() {
     enteredEmailValid: false,
     resetFirstNameInput: () => {},
     resetLastNameInput: () => {},
+    resetCompanyNameInput: () => {},
     resetEmailInput: () => {},
   };
 
@@ -33,6 +34,7 @@ export default function WelcomePage() {
     info.enteredEmailValid = params.enteredEmailValid;
     info.resetFirstNameInput = params.resetFirstNameInput;
     info.resetLastNameInput = params.resetLastNameInput;
+    info.resetCompanyNameInput = params.resetCompanyNameInput;
     info.resetEmailInput = params.resetEmailInput;
   };
 
@@ -83,6 +85,7 @@ export default function WelcomePage() {
   const resetForm = () => {
     info.resetFirstNameInput();
     info.resetLastNameInput();
+    info.resetCompanyNameInput();
     info.resetEmailInput();
     setIsRequestAttempted(false);
     setIsSending(false);
