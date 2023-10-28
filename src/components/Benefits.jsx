@@ -41,21 +41,21 @@ const Benefits = (props) => {
             <motion.section
               style={{ y: yBenefits1, opacity: opacityBenefits1 }}
             >
-              <img src={images.handshakeIcon} />
-              <h2>Close transactions in days rather than weeks</h2>
-              <p>
-                by utilizing software in place of manual processes to save weeks
-                worth of time until closing
-              </p>
-            </motion.section>
-            <motion.section
-              style={{ y: yBenefits2, opacity: opacityBenefits2 }}
-            >
               <img src={images.partnerIcon} />
               <h2>Attract more leads</h2>
               <p>
                 by leveraging creative finance as a seamless and desired option,
                 empowering both buyers and sellers
+              </p>
+            </motion.section>
+            <motion.section
+              style={{ y: yBenefits2, opacity: opacityBenefits2 }}
+            >
+              <img src={images.handshakeIcon} />
+              <h2>Close transactions in days rather than weeks</h2>
+              <p>
+                by utilizing software in place of manual processes to save weeks
+                worth of time until closing
               </p>
             </motion.section>
             <motion.section

@@ -113,9 +113,13 @@ const WelcomeHeader = (props) => {
             }}
           >
             <h1>Creative Financing Made Easy</h1>
+          </motion.div>
+        )}
+        {!props.params.isSent && !props.params.trial && (
+          <>
             <h2>
-              Close property transactions faster and cheaper with Creative
-              Finance, Smart Contracts, and Blockchain Technology
+              Close bankless property transactions faster and cheaper with
+              Creative Finance, Smart Contracts, and Blockchain Technology
             </h2>
             <h3>
               <i>Free Lifetime Access offer available only until 12/31/2023</i>
@@ -126,7 +130,7 @@ const WelcomeHeader = (props) => {
             >
               Register Now
             </Link>
-          </motion.div>
+          </>
         )}
         {props.params.trial && (
           <>
@@ -158,7 +162,7 @@ const WelcomeHeader = (props) => {
             }}
           >
             <b>
-              Congrats {JSON.parse(localStorage.getItem('firstName'))}, you will
+              Congrats {JSON.parse(localStorage.getItem('firstName'))}! You will
               have free lifetime access once Degreement is launched! Check your
               email for further updates.
             </b>
