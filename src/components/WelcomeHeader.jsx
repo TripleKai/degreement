@@ -116,7 +116,12 @@ const WelcomeHeader = (props) => {
           </motion.div>
         )}
         {!props.params.isSent && !props.params.trial && (
-          <>
+          <motion.div
+            style={{
+              y: yText,
+              opacity: opacityText,
+            }}
+          >
             <h2>
               Close bankless property transactions faster and cheaper with
               Creative Finance, Smart Contracts, and Blockchain Technology
@@ -130,7 +135,7 @@ const WelcomeHeader = (props) => {
             >
               Register Now
             </Link>
-          </>
+          </motion.div>
         )}
         {props.params.trial && (
           <>

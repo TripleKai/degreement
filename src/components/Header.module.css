@@ -50,6 +50,21 @@
   color: black;
 }
 
+#faq {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0 0 0;
+  padding: 3rem 3rem;
+  background-color: black;
+  color: #fff;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+#faq:hover {
+  background-color: #84b0fc;
+  color: black;
+}
+
 #contact {
   cursor: pointer;
   font-size: 1.2rem;

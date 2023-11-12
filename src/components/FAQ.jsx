@@ -25,6 +25,13 @@ const FAQ = (props) => {
     },
     {
       id: 3,
+      question: "Are Degreement services affected by Bitcoin's price?",
+      answer:
+        'No. The only dependency Degreement has on Bitcoin is the network itself. As long as even a single Bitcoin \
+        node exists, Degreement can always run all smart contract services on Bitcoin.',
+    },
+    {
+      id: 4,
       question:
         'Do you have your own cryptocurrency for investors or operations?',
       answer:
@@ -34,7 +41,7 @@ const FAQ = (props) => {
       we would prefer to stick to regulated securities.',
     },
     {
-      id: 4,
+      id: 5,
       question: 'Is all of this legal?',
       answer:
         'Yes. Our services fit within the current legal framework for property transactions. We follow the same \
