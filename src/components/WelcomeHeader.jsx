@@ -126,9 +126,6 @@ const WelcomeHeader = (props) => {
               Close bankless property transactions faster and cheaper with
               Creative Finance, Smart Contracts, and Blockchain Technology
             </h2>
-            <h3>
-              <i>Free Lifetime Access offer available only until 12/31/2023</i>
-            </h3>
             <Link
               id={styles['request-trial']}
               onClick={props.params.requestTrialHandler}
